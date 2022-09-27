@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, numquam aut nobis impedit, atque odio, praesentium
+        animi eligendi officia corporis explicabo facilis. A, aliquam dolores beatae illum quas veritatis. Excepturi
+        tempora consectetur voluptates ea distinctio cupiditate minus alias labore adipisci!
+    </h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est blanditiis repellendus illum debitis
+        exercitationem rem quod voluptas. Officia ipsam, quisquam commodi nihil a, repellendus voluptate corrupti
+        aliquam itaque deserunt porro magnam recusandae perspiciatis possimus, ea delectus sapiente quasi? Fugiat
+        assumenda voluptatem est odit accusamus quod voluptas temporibus unde! Nemo!
+    </p>
+    <button id="button">change</button>
+
+    <script>
+       document.getElementById('button').onclick=abc;
+       function abc(){
+        document.getElementById('para').innerHTML="hello";
+       }  
+       document.getElementById('button').onclick=abc;
+       function abc(){
+        document.getElementById('para1').style.background="red";
+       }     
+    </script>
+</body>
+
+</html>
