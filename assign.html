@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body  bgcolor="green" text="white">
+    <p id="demo"></p>
+    <script>
+        let h = new Date();
+        let f=h.getHours();
+        let g;
+        if( f < 20)
+        {
+            g ="good day";
+        }
+        else
+        {
+            g ="good evening";
+        }
+        document.getElementById("demo").innerHTML = g;
+    </script>
+</body>
+</html> 
+

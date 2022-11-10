@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<body>
+    <button onclick="calculate()">Click Me</button>
+    <script>
+        function calculate() {
+            var op = prompt("enter operator");
+            var a = Number(prompt("enter first number"));
+            var b = Number(prompt("enter second number"));
+            switch (op) {
+                case '+':
+                    document.write("The sum of two number is: " + (a + b));
+                    break;
+                case '-':
+                    document.write("Subtraction of two number is :" + (a - b));
+                    break;
+                case '*':
+                    document.write("Multiply of two number: " + (a * b));
+                    break;
+                case '/':
+                    document.write("Division of two number is :" + (a / b));
+                    break;
+                case '%':
+                    document.write("Division of two number is :" + (a % b));
+                    break;
+                    defualt:
+                    document.write("not a valid input");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
