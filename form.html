@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(255, 219, 192) ;
+        /* background-image:url(images/photo4.jpg) ; */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .b1{
+        margin: 10px;
+        cursor: pointer;
+      }
+      h1{
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        font-size: 50px;
+        color: red;
+        /* transition: 8s; */
+      }
+      @keyframes example{
+        0%{
+          margin-left: 10%;
+          color: red;
+          font-size: 50px;
+          
+        }
+        15%{
+          margin-left: 20%;
+          color: yellow;
+          font-size: 50px;
+          
+        }
+        25%{
+          margin-left: 30%;
+          color: blue;
+          font-size: 50px;
+        }
+        40%{
+          margin-left: 40%;
+          color: greenyellow;
+          font-size: 50px;
+        }
+        55%{
+          margin-left: 50%;
+          color: aqua;
+          font-size: 50px;
+        }
+        70%{
+          margin-left: 60%;
+          color: aquamarine;
+          font-size: 50px;
+        }
+        85%{
+          margin-left: 70%;
+          color: orchid;
+          font-size: 50px;
+        }
+       
+       
+      }
+    </style>
+</head>
+<body>
+    <form>
+      <h1>welcome page</h1>
+      <font size="15" color="red"><lebel> Name:</lebel></font>
+      <input type="text" style="margin-left:65px;"> <br>
+      <font size="10" color="red"><label>Phone no:</label></font>
+      <input type="number"><br>
+      <font size="10" color="red"><label>Email id:</label></font>
+      <input type="email" style="margin-left:25px;"><br>
+      <font size="15" color="red"><label>Password:</label></font>
+      <input type="password"><br><br><br>
+      <input type="button" value="submit" class="b1">
+      <input type="button" value="clear" class="b1">
+      <input type="button" value="exit" class="b1"> 
+      <br> 
+      <br>
+      <select name="" id="">
+        <option value="Select Your Friends">Select your friends</option>
+        <option value="Mohan">Mohan</option>
+        <option value="Gaurav">Gaurav</option>
+        <option value="Abhishek">Abhishek</option>
+        <option value="Sonuj">Sonu</option>''
+      </select>
+      <select name="" id="">
+        <option value="Select Your items">Select your Items</option>
+        <option value="Pen">Pen</option>
+        <option value="Pencil">Pencil</option>
+        <option value="laptop">laptop</option>
+      </select><br>
+      <div style="margin-left:80%">
+        <label>Name</label><br>
+      <input type="text" name="name" placeholder="name"><br>
+      <label>surename</label><br>
+      <input type="text" name="surename" placeholder="surename"><br>
+      Country: <br>
+      <select>
+        <option value="select you country"> select your country</option>
+        <option value="India">India</option>
+        <option value="Japan"> Japan</option>
+        <option value="America"> America</option>
+        <option value="Dubai">Dubai</option>
+      </select><br>
+      subject: <br>
+      <textarea name="subject" id="subject" cols="31" rows="10" placeholder="subject"></textarea>
+
+      </div>
+      
+    </form>
+    
+</body>
+</html>

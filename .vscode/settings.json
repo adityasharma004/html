@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "ALERT.C": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5501
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <H2 id="demo"></H2>
+    <button onclick="mystopfunction()">stop it</button>
+    <script>
+        const mytimeout = setTimeout(ankit,3000);
+        function ankit ()
+        {
+            document.getElementById("demo").innerHTML = "HAPPY DIWALI"
+        }
+        function mystopfunction()
+        {
+            clearTimeout(mytimeout);
+        }
+    </script>
+</body>
+</html>

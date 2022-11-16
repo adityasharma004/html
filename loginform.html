@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,64 @@
     <title>home form</title>
 </head>
 <style>
-    body{
-        background-color: aqua;     
+    body {
+        background-color: aqua;
     }
-    .b1{
+
+    form {
+        /* text-align: center; */
+
+
+    }
+
+    .b1 {
         cursor: pointer;
     }
+    
    
-
 </style>
+
 <body>
+    <u><H1 align ="center">Registration form</H1></u>
     <form>
-       <a></a> <font size="6"><label> Name :</label></font></a> 
-        <input type="text" name="name" size="20" maxlength="90" placeholder="Name"><br>
-        <font size="6"><label> Father Name :</label></font>
-        <input type="text" name="Father name" size="20" maxlength="90" placeholder="Father name"><br>
+        <font size="6"><label> Name :</label></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="name" size="20" maxlength="90" placeholder="Name">
+        <label> @gla.ac.in</label><br>
+        <font size="6"><label> Father Name:</label></font>
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="Father name" size="20" maxlength="90" placeholder="Father name"><br>
         <font size="6"><label>Mother Name :</label></font>
-        <input type="text" name=" Mother name" size="20" maxlength="90" placeholder=" Mother Name"><br>
+        &nbsp;&nbsp;&nbsp;<input type="text" name=" Mother name" size="20" maxlength="90" placeholder=" Mother Name"><br>
         <font size="6"><label> Email id :</label></font>
-        <input type="text" name="email" size="20" maxlength="90" placeholder="email id"><br>
-        <font size="6"><label>Password :</label></font> 
-        <input type="password" name="password" size="20" maxlength="90" placeholder="password"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" size="20" maxlength="90" placeholder="email id">
+        <label> @gmail.com</label><br>
+        <font size="6"><label>Password :</label></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" size="20" maxlength="90" placeholder="password"><br>
+        <font size="6"><label>re-password:</label></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" size="20" maxlength="90" placeholder=" re-password"><br>
+        <font size="6"><label>DOB:</label></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" name="date" size="20" maxlength="90" placeholder="date"><br>
         <font size="6"><label>Gender :</label></font>
-        <input type="radio" name="Gender" size="20" maxlength="90" value="male"class="b1">Male 
-        <input type="radio" name="Gender" size="20" maxlength="90" value="female"class="b1">Female <br>
+        <input type="radio" name="Gender" size="20" maxlength="90" value="male" class="b1">Male
+        <input type="radio" name="Gender" size="20" maxlength="90" value="female" class="b1">Female <br>
+        <font size="6"><label>Address:</label></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="Address" id="Address" cols="31" rows="10" placeholder="Address"></textarea><br>
         <select name="" id="">
-            <option value="Select Your items">Select your Favourite Sport</option>
-            <option value="Circket">Circket</option>
-            <option value="kabbadi">kabbadi</option>
-            <option value="football">football</option>
-            <option value="hockey">hockey</option>
-          </select> <br><br>
+            <option value="Select Your country">Select your country</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="America">America</option>
+            <option value="Nepal">Nepal</option>
+        </select> <br>
+        <font size="6"><label> Contact no :</label></font>
+        <input type="number" name="number" size="20" maxlength="90" placeholder="number"><br><br>
+
         <input type="submit" class="b1">
+
+        <input type="button" value="clear" class="b1">
+        <input type="button" value="reset" class="b1">
     </form>
 </body>
+
 </html>
