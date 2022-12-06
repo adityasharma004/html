@@ -1,67 +1,99 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1><marquee behavior="alternate">I love India </marquee></h1>
-   <font size="5" font color="yellow"><p><b><i><u>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit porro magni ratione nemo rerum quis ad doloremque
-    laudantium maxime odit laboriosam reprehenderit ipsa, nisi deleniti quod hic cum soluta temporibus?</u>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.</i> Mollitia dicta laboriosam eos quam cumque amet eveniet sed
-    exercitationem cupiditate magnam nesciunt dolore accusantium, distinctio hic? Magni deserunt eos qui expedita!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Magni nesciunt illum totam a labore debitis suscipit. Illo,
-    porro. Molestias, tempora velit, aperiam, deserunt quos quidem dolorem iste non ab est iure reprehenderit ut quis
-    eveniet? Omnis, perferendis debitis sunt facilis aliquid maxime, laboriosam ea minus esse ex quia rem quaerat
-    excepturi, voluptatum magnam consectetur! Ut officia voluptatibus quod explicabo eius.</p></font> <br>
-    h<sub>2</sub>0<br>
-    x<sup>2</sup>y<sup>3</sup><br>
-    <img src="images/Flag-India.webp" height="100"><br>
-    <a href="https://en.wikipedia.org/wiki/India"> INDIA</a><br>
-    <pre> 1.Ankit
-          2. chaudhary
-    </pre>
-
-
-
-</body>
-
-</html> -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Registration Form</title>
+<script type = "text/javascript">
+    function calc()
+    {
+        var m1,m2,m3,avg = 0,total = 0, result = "",grade = "";
+        m1 = parseInt(document.form1.wp.value);
+        m2 = parseInt(document.form1.sp.value);
+        m3 = parseInt(document.form1.cg.value);
+        total = m1+m2+m3;
+        avg = total/3;
+        if( m1 < 35 || m2 < 35 || m3 < 35)
+        {
+            result = "fail";
+            grade = "D";
+        }
+        else if(avg >= 75)
+        {
+            result = "Distinction";
+            grade = "A+";
+        }
+        else if(avg >= 60 && avg < 75)
+        {
+            result = "First class";
+            grade = "A";
+        }
+        else if(avg >= 50 && avg < 60)
+        {
+            result = "Second class";
+            grade = "B";
+        }
+        else if(avg >=35 && avg < 50)
+        {
+            result = "Pass class";
+            grade = "C";
+        }
+        else  if (avg < 35)
+        {
+            result = "Fail";
+            Grade = "D";
+        }
+        document.form1.result.value = result;
+        document.form1.grade.value = grade;
+        document.form1.total.value = total;
+        document.form1.average.value = avg;
+       
+    }
+</script>
 </head>
 <body>
-    <table border="1" >
-        <tr>
-            <th>Name</th>
-            <th colspan="2">Address</th>
-        </tr>
-        <tr>
-            <td> Ankit</td>
-            <td>township</td>
-            <td> mathura</td>
-        </tr>
-        <tr>
-            <td> dev</td>
-            <td colspan="2"> raya</td>
+    <form name = "form1">
+        <table border = "1">
+            <tr>
+                <td> Student Name</td>
+                <td><input type = "text"  /></td>
+            </tr>
+            <tr>
+                <td colspan = "2" align = "center">Subject Marks</td>
+            </tr>
+            <tr>
+                <td>Web Programming</td>
+                <td><input type = "text" name = "wp" /></td>
+            </tr>
+            <tr>
+                <td>Computer Graphics</td>
+                <td><input type = "text" name = "cg" /></td>
+            </tr>
+            <tr>
+                <td>System Programming</td>
+                <td><input type = "text" name = "sp" /></td>
 
-        </tr>
+            </tr>
+            <tr>
+                <td colspan = "2" align = "center"><input type = "button"   onclick = "calc()" value = "calculte" /></td>
+            </tr>           
+            <tr>
+                <td>Total</td>
+                <td><input type = "text" name = "total"/></td>
 
-    </table>
-    <h3>central University</h3>
-    <table border="1">
-        <img src="">
+            </tr>
+            <tr>
+                <td>Average</td>
+                <td><input type = "text" name = "average" /></td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type = "text" name = "result" /></td>
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td><input type = "text" name = "grade"/></td>
+            </tr>
 
-    </table>
-
+        </table>
+    </form>
 </body>
 </html>
